@@ -1,23 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>LOYDing</title>
-<link rel="stylesheet" href="css/app.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
 
-<div class="loader">
-<h1>LOYDing</h1>
-<p>Now LOYDing...</p>
+<!-- LOGIN -->
+<div id="loginScreen" class="login-screen">
+  <div class="login-box">
+    <h2>LOYDing</h2>
+    <input id="loginId" placeholder="ID">
+    <input id="loginPw" type="password" placeholder="Password">
+    <button onclick="login()">LOGIN</button>
+  </div>
 </div>
 
-<script>
-setTimeout(()=>{
-location.href="app.html";
-},1500);
-</script>
+<!-- APP -->
+<div id="app" class="app hidden">
 
+  <!-- HEADER -->
+  <div class="top-bar">
+    <span id="pageTitle">Home</span>
+  </div>
+
+  <!-- PAGES -->
+  <div id="homePage" class="page active"></div>
+  <div id="chatPage" class="page"></div>
+  <div id="communityPage" class="page"></div>
+  <div id="myPage" class="page"></div>
+
+  <!-- NAV -->
+  <div class="bottom-nav">
+    <div onclick="openTab('home')" class="nav-item active">
+      <i class="fa-regular fa-house"></i>
+      <span>Home</span>
+    </div>
+    <div onclick="openTab('chat')" class="nav-item">
+      <i class="fa-regular fa-comment"></i>
+      <span>Chat</span>
+    </div>
+    <div onclick="openTab('community')" class="nav-item">
+      <i class="fa-regular fa-users"></i>
+      <span>Community</span>
+    </div>
+    <div onclick="openTab('my')" class="nav-item">
+      <i class="fa-regular fa-user"></i>
+      <span>My</span>
+    </div>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
 </body>
 </html>
+
 
