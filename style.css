@@ -1,0 +1,165 @@
+*{
+  box-sizing:border-box;
+  font-family:'Open Sans',sans-serif;
+}
+
+body{
+  margin:0;
+  background:#fff;
+}
+
+/* LOGIN */
+
+.login-screen{
+  position:fixed;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:white;
+}
+
+.login-box{
+  width:85%;
+  max-width:320px;
+}
+
+.login-box h2{
+  text-align:center;
+  margin-bottom:20px;
+}
+
+.login-box input{
+  width:100%;
+  padding:14px;
+  border-radius:14px;
+  border:1px solid #ddd;
+  margin-bottom:12px;
+}
+
+.login-box button{
+  width:100%;
+  padding:14px;
+  border:none;
+  border-radius:16px;
+  background:black;
+  color:white;
+  font-weight:600;
+}
+
+/* APP */
+
+.hidden{display:none;}
+
+.app{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+}
+
+/* HEADER */
+
+.top-bar{
+  padding:14px;
+  border-bottom:1px solid #eee;
+  font-weight:600;
+}
+
+/* PAGES */
+
+.page{
+  flex:1;
+  overflow-y:auto;
+  display:none;
+  padding-bottom:70px;
+}
+
+.page.active{
+  display:block;
+}
+
+/* NAV */
+
+.bottom-nav{
+  position:fixed;
+  bottom:0;
+  width:100%;
+  display:flex;
+  border-top:1px solid #eee;
+  background:white;
+}
+
+.nav-item{
+  flex:1;
+  text-align:center;
+  padding:8px 0;
+  font-size:12px;
+  color:#999;
+}
+
+.nav-item i{
+  font-size:18px;
+  display:block;
+  margin-bottom:4px;
+}
+
+.nav-item.active{
+  color:black;
+}
+
+/* CHAT */
+
+.chat-room{
+  padding:12px;
+}
+
+.bubble{
+  max-width:75%;
+  padding:10px 14px;
+  border-radius:20px;
+  margin-bottom:10px;
+}
+
+.fan{
+  background:#000;
+  color:white;
+  margin-left:auto;
+}
+
+.artist{
+  background:#f2f2f2;
+}
+
+.reply-btn{
+  font-size:12px;
+  margin-top:4px;
+  opacity:.6;
+  cursor:pointer;
+}
+
+/* INPUT */
+
+.chat-input{
+  position:fixed;
+  bottom:55px;
+  width:100%;
+  display:flex;
+  padding:8px;
+}
+
+.chat-input input{
+  flex:1;
+  padding:12px;
+  border-radius:20px;
+  border:1px solid #ddd;
+}
+
+.chat-input button{
+  width:45px;
+  height:45px;
+  margin-left:6px;
+  border-radius:50%;
+  background:black;
+  color:white;
+  border:none;
+}
