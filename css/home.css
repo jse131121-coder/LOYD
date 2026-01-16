@@ -1,0 +1,19 @@
+.home{
+padding:18px;
+}
+
+.card{
+background:#f7f7f7;
+border-radius:20px;
+padding:15px;
+margin-bottom:12px;
+}
+
+.card h4{
+margin-bottom:6px;
+font-size:14px;
+}
+
+.live p{
+font-weight:600;
+}
