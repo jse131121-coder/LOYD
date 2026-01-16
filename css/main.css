@@ -1,0 +1,65 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Open Sans',sans-serif;
+}
+
+body{
+background:#fff;
+color:#000;
+}
+
+/* ===== Loading ===== */
+
+.loader{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+
+.loader h1{
+font-size:34px;
+font-weight:600;
+margin-bottom:20px;
+}
+
+.progress-bar{
+width:200px;
+height:6px;
+background:#eee;
+border-radius:10px;
+overflow:hidden;
+}
+
+.progress{
+height:100%;
+width:0%;
+background:#000;
+transition:0.3s;
+}
+
+.loader p{
+margin-top:15px;
+font-size:13px;
+color:#777;
+}
+
+/* ===== Panel ===== */
+
+.panel{
+padding:20px;
+}
+
+.panel button{
+width:100%;
+padding:14px;
+border:none;
+border-radius:20px;
+margin-bottom:10px;
+background:#000;
+color:#fff;
+font-size:14px;
+}
