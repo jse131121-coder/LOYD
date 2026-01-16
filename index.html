@@ -1,29 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>LOYDing</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/main.css">
-
+<link rel="stylesheet" href="css/app.css">
 </head>
 <body>
 
 <div class="loader">
-
 <h1>LOYDing</h1>
-
-<div class="progress-bar">
-<div class="progress"></div>
+<p>Now LOYDing...</p>
 </div>
 
-<p id="loadingText">Now LOYDing...</p>
-
-</div>
-
-<script src="js/loading.js"></script>
+<script>
+setTimeout(()=>{
+location.href="app.html";
+},1500);
+</script>
 
 </body>
 </html>
+
