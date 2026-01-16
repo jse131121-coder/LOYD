@@ -1,0 +1,72 @@
+body{
+background:#fff;
+font-family:'Open Sans',sans-serif;
+}
+
+.room-tabs{
+display:flex;
+border-bottom:1px solid #eee;
+}
+
+.room-tabs button{
+flex:1;
+padding:12px;
+border:none;
+background:#fff;
+font-weight:600;
+}
+
+.chat-box{
+height:75vh;
+padding:15px;
+overflow-y:auto;
+}
+
+.bubble{
+max-width:70%;
+padding:12px 16px;
+border-radius:22px;
+margin-bottom:10px;
+font-size:14px;
+}
+
+.fan{
+border:1px solid #e5e5e5;
+margin-left:auto;
+}
+
+.artist{
+background:#000;
+color:#fff;
+}
+
+.quote{
+font-size:12px;
+color:#ccc;
+border-left:2px solid #888;
+padding-left:8px;
+margin-bottom:6px;
+}
+
+.input-box{
+display:flex;
+padding:10px;
+border-top:1px solid #eee;
+}
+
+.input-box input{
+flex:1;
+border:none;
+background:#f5f5f5;
+padding:12px;
+border-radius:20px;
+}
+
+.input-box button{
+background:#000;
+color:#fff;
+border:none;
+border-radius:20px;
+padding:12px 16px;
+margin-left:8px;
+}
